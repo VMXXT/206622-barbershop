@@ -6,34 +6,36 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-      </div>
+      <div>     <!-- Поправил -->
+      <a class="logo" href="index.html">логотип</a> <!-- изменил див на ссылку -->
       <nav class="main-navigation">
         <ul>
           <li>
-            <a href="#">Информация</a>
+            <a href="#" class="main-navigation-link">Информация</a> <!-- добавил классы -->
           </li>
           <li>
-            <a href="#">Новости</a>
+            <a href="#" class="main-navigation-link">Новости</a>
           </li>
           <li>
-            <a href="#">Прайс-лист</a>
+            <a href="#" class="main-navigation-link">Прайс-лист</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="#" class="main-navigation-link">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#" class="main-navigation-link">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="user-block">
         <a class="login" href="#">Вход</a>
       </div>
+    </div>
     </header>
-    <main class="container">
-      <h1 class="page-hading">Средства для ухода</h1>
-      <nav class="tree-navigation">
+    <main>
+      <div class="container"> <!-- Добавил див, перенес класс -->
+      <h1 class="page-heading">Средства для ухода</h1>
+      <breadcrumbs class="breadcrumbs"> <!-- помянял на крошки и присвоил новый класс-->
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -45,41 +47,45 @@
             <a href="#">Средства для ухода</a>
           </li>
           <li>
-            <a href="#">Набор для путешествий «Baxter of California»</a>
+            Набор для путешествий «Baxter of California» <!-- Убрал ссылку -->
           </li>
         </ul>
-      </nav>
-      <figure class="gallery-item">
-        <div class="gallery-item-main">
+      </breadcrumbs>
+        <div class="inner-column"><!-- присвоил одинаковые классы, убрал figure-->
           <img class="item-img-large" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
         </div>
-        <div class="gallery-item-img">
-          <img class="item-img" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
-          <img class="item-img" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
-          <img class="item-img" src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
+        <div class="inner-column"> <!--изменил классы, добавил ссылки -->
+          <a href="#" class="gallery-thumbnails">
+           <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
+          </a>
+          <a href="#" class="gallery-thumbnails">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
+          </a>
+          <a href="#" class="gallery-thumbnails">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
+          </a>
         </div>
-      </figure>
       <section class="item-content">
-        <div class="item-content-header">
+        <span class="item-header-left"> <!-- поменял на спан присвоил новые классы -->
           Есть в наличии
-        </div>
-        <div class="item-content-header-2">
+        </span>
+        <span class="item-header-right">
           Артикул: dexter-ae
-        </div>
-        <div class="item-content-description">
-          Travel Kit – необходимый аксессуар во время любого<br>
-          путешествия. В аккуратной кожаной сумке находится все, что<br>
-          нужно для бритья и ухода за кожей во время рабочей поездки<br>
-          или отдыха: средство для умывания, увлажняющий крем, крем<br>
-          для бритья, крем после бритья, шампунь. Набор также может<br>
+        </span>
+        <span class="price"> <!--поменял на спан, изменил класс, убрал бр -->
+          Travel Kit – необходимый аксессуар во время любого
+          путешествия. В аккуратной кожаной сумке находится все, что
+          нужно для бритья и ухода за кожей во время рабочей поездки
+          или отдыха: средство для умывания, увлажняющий крем, крем
+          для бритья, крем после бритья, шампунь. Набор также может
           стать отличным подарком.
-          <p class="item-content-center">
+          <p> <!--убрал класс -->
             2900 руб.
-            <a href="#" class="item-btn">Купить</a>
+            <a href="#" class="buy-btn">Купить</a>
           </p>
         </div>
         <div class="item-content-bottom">
-          <h2 class="item-list-header">В набор входят</h2>
+          <h2 class="sub-title">В набор входят</h2> <!--изменил класс -->
           <ul>
             <li>Средство для умывания (50 мл)</li>
             <li>Увлажняющий крем (50 мл)</li>
@@ -89,6 +95,7 @@
           </ul>
         </div>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
       <div class="container">
